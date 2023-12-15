@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-OP1-No.2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <p>Hello World Test</p>
+    <div class="top-header">
+        <div class="text-head">
+            <h1>Mathematics Opus 1 No.2 </h1>
+            <p>โดยปรเมษฐ์ ชมภูชิต ในกลุ่มนักเรียน PFONT โรงเรียนนางรอง บุรีรัมย์<br>ชื่อตัวงาน : PFONT-M-OP1-NO2</p>
+        </div>
+        <div class="logo">
+            <img src="" alt="pfont-logo">
+            <img src="" alt="nangrong-logo">
+        </div>
+    </div>
+    <div class="container">
+        <input type="number" id="problem">
+        <input type="number" id="answer">
+        <button type="submit">คำนวณ</button>
+    </div>
+    <div class="option-container">
+        <div class="option operators">
+            <p>เครื่องหมาย</p>
+            <div class="warper">
+                <input type="checkbox" id="basic-op" checked>
+                <label for="basic-op">+-x÷</label><br>
+                <input type="checkbox" id="mid-op" checked>
+                <label for="mid-op"> ^ </label><br>
+                <input type="checkbox" id="advance-op" checked>
+                <label for="advance-op">Σ</label><br>
+                <input type="checkbox" id="root-op" checked>
+                <label for="root-op">√</label><br>
+                <input type="checkbox" id="fact-op" checked>
+                <label for="fact-op">!</label><br>               
+            </div>
+        </div>
+        
+        <div class="option precision">
+            <p>ความแม่นยำ</p>
+            <div class="warper">
+                <input type="number" min="0" value="0">
+            </div>
+            <p style="font-size: 66%;">ความแม่นยำ หมายความว่า คำตอบที่ได้จากสมการห่างออกไปจากคำตอบที่ต้องการมากแค่ไหน </p>
+        </div>
+
+        <div class="option output-form">
+            <p>รูปแบบแสดงผล</p>
+        </div>
+    </div>
 </body>
 </html>
