@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M-OP1-No.2</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap');
+    </style>
+
+    <script src="script.js"></script>
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
 </head>
 <body>
-    <p>Hello World Test</p>
+    <div class="container header">
+        <div>
+            <h1 style="color: black;text-shadow: none;">Mathematics Opus 1 No.2</h1>
+            <p>โดยปรเมษฐ์ ชมภูชิต ในกลุ่มนักเรียน PFONT โรงเรียนนางรอง บุรีรัมย์<br>ชื่อตัวงาน : PFONT-M-OP1-NO2</p>
+            </div>
+        <div class="logos">
+            <img id="nangrong-logo" src="nangrong-logo.png" alt="nangrong-logo">
+        </div>
+    </div>
+
+    <div class="container input-container">
+        <input type="number" id="problem" pattern="[0-9]*">
+        <input type="number" id="answer" pattern="[0-9]*">
+        <button type="submit" onclick="start()">START</button>
+    </div>
+
+    <div class="container output-container" id="output">
+    </div>
 </body>
 </html>
